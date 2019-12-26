@@ -11,7 +11,7 @@ Everton Ferreira
   - [Clonando o Repositório](#clonando-o-repositório)
   - [Instalando as Dependências](#instalando-as-dependências)
 - [Rodando o projeto](#rodando-o-projeto)
-- [Gerar arquiovos de Produção](#Gerar-arquiovos-de-Produção)
+- [Gerar arquivos de Produção](#Gerar-arquivos-de-Produção)
 
 ## Visão Geral do Projeto
 O principal objetivo e fazer um estudo sobre desenvolvimento de jogos utilizando a biblioteca Phaser js.
@@ -46,6 +46,6 @@ npm install
 
 Adicione o projeto em algum seridor ex: wamp ou outros
 
-## Gerar arquiovos de Produção
+## Gerar arquivos de Produção
 
 Execute no **Prompt de Comando** (caso você esteja no linux, basta utilizar o terminal) `grunt build` para criar os arquivo minificados do projeto. Os arquivos serão armazenados no diretório `dist /`.
