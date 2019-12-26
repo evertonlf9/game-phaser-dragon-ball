@@ -1,0 +1,40 @@
+{
+  "name": "importancia_leitura",
+  "version": "1.0.0",
+  "description": "Curso Formacao pedagogica ",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error no test specified\" && exit 1",
+    "build": "npm i && node_modules/.bin/grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.mstech.com.br:"
+  },
+  "keywords": [
+    "ines"
+  ],
+  "author": {
+    "name": "Everton Luis Ferriera",
+    "email": "everton.ferreira@mstech.com.br"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-compress": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-htmlmin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-usemin": "latest",
+    "grunt-version": "latest",
+    "grunt-wiredep": "latest",
+    "load-grunt-tasks": "latest"
+  }
+}

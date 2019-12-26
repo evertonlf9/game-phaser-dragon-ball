@@ -1,0 +1,219 @@
+{
+  "id": 1,
+  "name": "phase1",
+  "map": {
+    "name": "stage1",
+    "url": "json/map1.json",
+    "type": "json",
+    "spriteSheet": {
+      "name": "tilesheet",
+      "url": "images/tilesheet.png",
+      "type": "image",
+      "tileWidth": 32,
+      "tileHeight": 32
+    },
+    "layer": [
+      {
+        "name": "Collision",
+        "visible": false
+      },
+      {
+        "name": "Ground",
+        "visible": true
+      },
+      {
+        "name": "layer",
+        "visible": true
+      },
+      {
+        "name": "layer1",
+        "visible": true
+      }
+    ]
+  },
+  "groups": [
+    {
+      "type": "interactive"
+    },
+    {
+      "type": "static"
+    },
+    {
+      "type": "achievement"
+    }
+  ],
+  "player": {
+    "name": "vegeta",
+    "group": "interactive",
+    "url": "images/vegeta.png",
+    "width": 32,
+    "height": 32,
+    "posCol": 10,
+    "posRow": 4,
+    "speed": 150,
+    "animations": [
+      {
+        "name": "down",
+        "fps": 10,
+        "frames": [0, 1, 2, 3],
+        "loop": true
+      },
+      {
+        "name": "left",
+        "fps": 10,
+        "frames": [4, 5, 6, 7 ],
+        "loop": true
+      },
+      {
+        "name": "right",
+        "fps": 10,
+        "frames": [8, 9, 10, 11],
+        "loop": true
+      },
+      {
+        "name": "up",
+        "fps": 10,
+        "frames": [12, 13, 14, 15],
+        "loop": true
+      }
+    ],
+    "sizeCollide": {
+      "width": 32,
+      "height": 36,
+      "offsetWidth": 0,
+      "offsetHeight": 1
+    }
+  },
+  "npcs": [
+    {
+      "name": "MajinBoo",
+      "url": "images/MajinBoo.png",
+      "type": "static",
+      "width": 32,
+      "height": 32,
+      "positions": [
+        {
+          "id": "npc1",
+          "group": "interactive",
+          "posCol": 8,
+          "posRow": 3,
+          "axisX": 1,
+          "axisY": 0,
+          "animatorName": "right",
+          "life": 100,
+          "speed": 30,
+          "range": 250,
+          "item": "boll1",
+          "weapon": true,
+          "delayWeapon": 50,
+          "stateAnima": "stop",
+          "delayAnima": 0,
+          "animations": [
+            {
+              "name": "down",
+              "fps": 6,
+              "frames": [0, 1, 2, 3],
+              "loop": true
+            },
+            {
+              "name": "left",
+              "fps": 6,
+              "frames": [4, 5, 6, 7 ],
+              "loop": true
+            },
+            {
+              "name": "right",
+              "fps": 7,
+              "frames": [8, 9, 10, 11],
+              "loop": true
+            },
+            {
+              "name": "up",
+              "fps": 6,
+              "frames": [12, 13, 14, 15],
+              "loop": true
+            }
+          ],
+          "sizeCollide": {
+            "width": 32,
+            "height": 32,
+            "offsetWidth": 0,
+            "offsetHeight": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "charizard",
+      "url": "images/charizard.png",
+      "type": "static",
+      "width": 32,
+      "height": 32,
+      "positions": [
+        {
+          "id": "npc2",
+          "group": "static",
+          "posCol": 17,
+          "posRow": 6,
+          "axisX": -1,
+          "axisY": 0,
+          "range": 150,
+          "animatorName": "left",
+          "life": 50,
+          "speed": 30,
+          "delayAnima": 0,
+          "animations": [
+            {
+              "name": "down",
+              "fps": 3,
+              "frames": [0, 1, 2, 3],
+              "loop": true
+            },
+            {
+              "name": "left",
+              "fps": 3,
+              "frames": [4, 5, 6, 7 ],
+              "loop": true
+            },
+            {
+              "name": "right",
+              "fps": 3,
+              "frames": [8, 9, 10, 11],
+              "loop": true
+            },
+            {
+              "name": "up",
+              "fps": 3,
+              "frames": [12, 13, 14, 15],
+              "loop": true
+            }
+          ],
+          "sizeCollide": {
+            "width": 32,
+            "height": 32,
+            "offsetWidth": 0,
+            "offsetHeight": 0
+          }
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "name": "boll1",
+      "url": "images/itens.png",
+      "type": "static",
+      "width": 32,
+      "height": 32,
+      "positions": [
+        {
+          "id": "boll1",
+          "group": "achievement",
+          "posCol": 12,
+          "posRow": 6,
+          "renderable": false
+        }
+      ]
+    }
+  ]
+}
